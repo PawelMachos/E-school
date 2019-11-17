@@ -9,6 +9,7 @@
         <class>model.Student</class>
         <class>model.Grade</class>
         <class>model.Group</class>
+        <class>model.Principal</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
