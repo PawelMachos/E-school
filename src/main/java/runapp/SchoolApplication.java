@@ -36,6 +36,12 @@ public class SchoolApplication {
                 .setParameter("lastName", "Kovalski").setParameter("firstName", "Janek").getResultList();
 
         Student found = em.find(Student.class, 2L);
+
+        em.getTransaction().begin();
+        Student student = em.find(Student.class, 3L);
+        student.getPerson().setFirstName("Tadeusz");
+        em.merge(student);
+        em.getTransaction().commit();
         
     }
 }
