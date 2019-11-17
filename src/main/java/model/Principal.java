@@ -3,8 +3,8 @@ package model;
 import javax.persistence.*;
 
 
-@Entity(name = "Principa")
-@Table(name = "principat")
+@Entity(name = "Principal")
+@Table(name = "principal")
 public class Principal extends EntityBase {
 
 
