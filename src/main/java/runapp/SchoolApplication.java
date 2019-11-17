@@ -1,6 +1,8 @@
-package model;
+package runapp;
 
 import com.google.common.collect.Lists;
+import model.Person;
+import model.Student;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -16,9 +18,9 @@ public class SchoolApplication {
 
         em.getTransaction().begin();
 
-//        Person p = new Person();
-//        p.setFirstName("Jan");
-//        p.setLastName("Kowalski");
+        Person p = new Person();
+        p.setFirstName("Jan");
+        p.setLastName("Kowalski");
 //
 //        Student s = new Student();
 //        s.setPerson(p);

@@ -20,6 +20,17 @@ public class Person extends EntityBase {
     @Enumerated(EnumType.STRING)
     private Gender gender;
 
+    @Column(name = "telephone_number")
+    private Integer tel_number;
+
+    public Integer getTel_number() {
+        return tel_number;
+    }
+
+    public void setTel_number(Integer tel_number) {
+        this.tel_number = tel_number;
+    }
+
 
     public String getFirstName() { return firstName; }
 
