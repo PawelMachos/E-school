@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Table(name = "group")
-@Entity(name = "group")
+@Entity(name = "Group")
 public class Group extends EntityBase {
 
     @Column(name = "name", nullable = false)
