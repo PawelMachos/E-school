@@ -14,6 +14,10 @@ public class Student extends EntityBase {
     @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
     private List<Grade> grades;
 
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "Group")
+    public Group group;
+
     public Person getPerson() {
         return person;
     }
